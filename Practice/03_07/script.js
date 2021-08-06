@@ -7,3 +7,16 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+const vehicle = {
+  name: "car",
+  mpg: 30,
+  makeAndModel: {
+    make: "Nissan",
+    model: "Sentra",
+  },
+  year: 2007,
+};
+
+console.log("Vehicle object: ", vehicle);
+console.log("Vehicle mpg: ", vehicle.mpg);
