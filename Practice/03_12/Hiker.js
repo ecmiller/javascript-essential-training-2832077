@@ -1,28 +1,8 @@
-import Backpack from "./Backpack.js";
 class Hiker {
-  constructor(
-    name,
-    age,
-    pack,
-    bpName,
-    bpVolume,
-    bpColor,
-    bpPocketNum,
-    bpStrapLengthL,
-    bpStrapLengthR,
-    bpLidOpen
-  ) {
+  constructor(name, age, pack) {
     this.name = name;
     this.age = age;
-    this.pack = new Backpack(
-      bpName,
-      bpVolume,
-      bpColor,
-      bpPocketNum,
-      bpStrapLengthL,
-      bpStrapLengthR,
-      bpLidOpen
-    );
+    this.pack = pack;
   }
   sayHello() {
     console.log(this.name, " says hello");

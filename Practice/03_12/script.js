@@ -7,13 +7,12 @@
  * - Test the objecs by calling their properties and using their methods in the console.
  */
 import Animal from "./Animal.js";
+import Backpack from "./Backpack.js";
 import Hiker from "./Hiker.js";
 
 const dog = new Animal("dog", 4, true);
 
-const trailHiker = new Hiker(
-  "Doug",
-  25,
+const lightBackpack = new Backpack(
   "Light Backpack",
   12,
   "green",
@@ -22,6 +21,8 @@ const trailHiker = new Hiker(
   8,
   false
 );
+
+const trailHiker = new Hiker("Doug", 25, lightBackpack);
 console.log("Animal: ", dog);
 console.log("Hiker: ", trailHiker);
 dog.makeNoise();
